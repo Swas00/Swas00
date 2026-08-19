@@ -65,12 +65,7 @@ I enjoy learning by building projects, solving problems, and exploring how techn
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Swas00&show_icons=true&theme=radical&count_private=true" alt="Swastik's GitHub Stats" height="165"/>
   <img src="https://streak-stats.demolab.com/?user=Swas00&theme=radical" alt="Swastik's GitHub Streak" height="165"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Swas00&layout=compact&theme=radical" alt="Top Languages"/>
 </p>
 
 ---
