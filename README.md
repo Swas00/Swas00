@@ -2,7 +2,7 @@
 
 <img src="assets/header.svg" alt="Swastik: full-stack developer and AI explorer. Online, last push today, 4 day streak." width="100%"/>
 
-<a href="https://portfolio-mu-weld-68.vercel.app">Portfolio</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/swastik-sahu-linkdin07/">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:swastiks014@gmail.com">Email</a> &nbsp;·&nbsp; <a href="https://github.com/Swas00?tab=repositories">Repositories</a>
+<a href="https://portfolio-swastik-sahu.vercel.app/">Portfolio</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/swastik-sahu-linkdin07/">LinkedIn</a> &nbsp;·&nbsp; <a href="mailto:swastiks014@gmail.com">Email</a> &nbsp;·&nbsp; <a href="https://github.com/Swas00?tab=repositories">Repositories</a>
 
 <br/>
 
@@ -51,7 +51,7 @@
 <!--OPS_START-->
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | today | _Still cooking._ |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-swastik-sahu.vercel.app/) | `TypeScript` | today | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | today | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 16d ago | Resume assistant project |
 | [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 17d ago | _Still cooking._ |
