@@ -53,7 +53,7 @@
 |:--|:--|:--|:--|
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | today | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | today | Project Workspace Collaboration Platform |
-| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 16d ago | Resume assistant project |
+| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 17d ago | Resume assistant project |
 | [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 17d ago | _Still cooking._ |
 | [**traana-mvp**](https://github.com/Swas00/traana-mvp) | `JavaScript` | 25d ago | _Still cooking._ |
 | [**Spend_Wise**](https://github.com/Swas00/Spend_Wise) | `JavaScript` | 32d ago | _Still cooking._ |
