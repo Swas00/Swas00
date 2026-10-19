@@ -1,49 +1,68 @@
-# 🚀 2-Minute Update Guide for Your GitHub Profile (`Swas00`)
+# 🚀 Complete Deployment Guide for Swastik's Enhanced Profile (@Swas00)
 
-Your GitHub profile repository **`Swas00/Swas00`** is already created on GitHub! 
-
-To update it with the new Modern Dark & Neon design:
+Your profile is now powered by the full **Kaushik-inspired Data Visualization & Showcase Architecture**, customized for your data and projects.
 
 ---
 
-### Method 1: Push via Terminal (Recommended & Fastest)
+### 🌟 What this brings to your GitHub Profile:
 
-Run the following commands in your terminal:
+1. **Aurora Header Banner (`assets/header.svg`)**:
+   - Drifting live aurora background mesh
+   - Real-time weekly contribution totals wave
+   - Rotating roles: *"Full-stack software developer"*, *"Exploring GenAI, LLMs & LangChain"*, *"MCA student & passionate builder"*
+   - Live glass status chips showing: `STATUS: Online`, `LAST PUSH: <repo>`, `STREAK: <n> days`
+2. **Operator Dossier (`assets/dossier.svg`)**:
+   - Halftone portrait rendered directly from your GitHub profile picture (`Swas00.png`)
+   - Real-time statistics: Public Repos, Stars, Followers, Streak, Commit Count, and Language Mix
+3. **Live Vitals (`assets/vitals.svg`)**:
+   - 3 live gauges: Streak & consistency rings, 24-hour push clock (shows what time of day you ship code), and 26-week momentum comparison
+4. **Contribution Skyline (`assets/skyline.svg`)**:
+   - 3D procedural isometric city: 1 building per day, height = commits, lit windows for active days, beacon marking your peak commit day
+5. **Repo Neural Map (`assets/neural.svg`)**:
+   - Every one of your repositories is a neuron clustered by language and wired to repos with shared topics/dependencies, with pulse rings on active repos
+6. **Contribution Galaxy (`assets/galaxy.svg`)**:
+   - 365 days of contributions mapped as an astronomical spiral galaxy (core is today)
+   - Interactive visitor star guestbook (visitors can submit an issue to add their orbiting star!)
+7. **Active Ops Flight Recorder (`assets/ops.svg` & Table)**:
+   - 2-week push histogram per repository
+   - Markdown mission-brief table auto-updated by `explorer.py` with your latest public repos (`portfolio`, `letscollab`, `Spend_Wise`, `LIFE-RPG`, etc.)
+8. **Interactive Transmission CTF (`assets/div-ctf.svg`)**:
+   - 3-stage CTF challenge hidden in your profile with automated proof verification and Hall of Fame
+9. **Arsenal**:
+   - Curated skill icons (`skillicons.dev`) and custom badges matching your royal/dark palette
+10. **Full Automation (`.github/workflows/showcase.yml`)**:
+    - Runs every 6 hours and on **every push to `main`**
+    - Uses `GITHUB_TOKEN` to recalculate all stats, re-render all SVGs directly into `assets/`, update the `README.md` table, and commit automatically!
+
+---
+
+### 🚀 How to Push to GitHub in 1 Step
+
+All 15 SVGs are already compiled and committed locally in this repository. Push them to your GitHub profile:
 
 ```bash
 cd /Users/swastiksahu/.gemini/antigravity/scratch/github-profile-readme
-git remote remove origin 2>/dev/null || true
-git remote add origin https://github.com/Swas00/Swas00.git
-git push -u origin main --force
+git push origin main --force
 ```
 
-*(If prompted to authenticate, log into your GitHub account `Swas00` via personal access token or GitHub credentials).*
+---
+
+### ⚙️ Ensure GitHub Actions Permissions (One-Time Setup)
+
+To allow GitHub Actions to run the automatic 6-hour and on-push re-renders:
+
+1. Open your repository: 👉 **[https://github.com/Swas00/Swas00](https://github.com/Swas00/Swas00)**
+2. Click **Settings** (top tab) ➔ **Actions** (left sidebar) ➔ **General**.
+3. Under **Workflow permissions**, select **"Read and write permissions"**.
+4. Check the box **"Allow GitHub Actions to create and approve pull requests"**.
+5. Click **Save**.
 
 ---
 
-### Method 2: Via GitHub Web Interface
+### 🔄 How to Force an On-Demand Update Anytime
 
-1. Go directly to your repository:
-   👉 **[https://github.com/Swas00/Swas00](https://github.com/Swas00/Swas00)**
-2. Click on **`README.md`** ➔ click the ✏️ **Edit** icon (top right).
-3. Select all and replace the content with the new code from **[`README.md`](file:///Users/swastiksahu/.gemini/antigravity/scratch/github-profile-readme/README.md)**.
-4. Click **Commit changes**.
-5. Add the Snake workflow:
-   - Click **Add file** ➔ **Create new file**.
-   - In the name field, type: `.github/workflows/snake.yml`.
-   - Paste the code from **[`.github/workflows/snake.yml`](file:///Users/swastiksahu/.gemini/antigravity/scratch/github-profile-readme/.github/workflows/snake.yml)**.
-   - Click **Commit changes**.
-
----
-
-### 🐍 Enable the Contribution Snake Workflow
-
-1. In your `Swas00/Swas00` repository on GitHub, click **Settings** ➔ **Actions** ➔ **General**.
-2. Scroll down to **Workflow permissions**.
-3. Select **Read and write permissions** ➔ click **Save**.
-4. Go to the **Actions** tab ➔ select **Generate Snake Contribution Animation** ➔ click **Run workflow**.
-
----
-
-### ✨ View Your Profile
-Visit **[https://github.com/Swas00](https://github.com/Swas00)** — your enhanced profile is live!
+Whenever you push code to any repo and want your profile to refresh immediately:
+1. Go to **[https://github.com/Swas00/Swas00/actions](https://github.com/Swas00/Swas00/actions)**.
+2. Click **Update showcase (dossier, galaxy, radar)**.
+3. Click **Run workflow** ➔ **Run workflow**.
+4. In ~45 seconds, all SVGs and your repository table will update to the latest state.
