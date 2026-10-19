@@ -9,6 +9,7 @@ the GitHub API, so there is nothing third-party to break.
 import colorsys
 import collections
 import io
+import os
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -30,11 +31,15 @@ FONT = "ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace"
 
 
 def portrait():
-    raw = urllib.request.urlopen(urllib.request.Request(
-        f"https://github.com/{USER}.png?size=460", headers={"User-Agent": "profile-gen"}), timeout=30).read()
-    im = Image.open(io.BytesIO(raw)).convert("RGB")
-    w, h = im.size
-    im = im.crop((int(CROP[0] * w), int(CROP[1] * h), int(CROP[2] * w), int(CROP[3] * h)))
+    local_avatar = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "avatar.png")
+    if os.path.exists(local_avatar):
+        im = Image.open(local_avatar).convert("RGB")
+    else:
+        raw = urllib.request.urlopen(urllib.request.Request(
+            f"https://github.com/{USER}.png?size=460", headers={"User-Agent": "profile-gen"}), timeout=30).read()
+        im = Image.open(io.BytesIO(raw)).convert("RGB")
+        w, h = im.size
+        im = im.crop((int(CROP[0] * w), int(CROP[1] * h), int(CROP[2] * w), int(CROP[3] * h)))
     rows = round(COLS * im.height / im.width)
     im = im.resize((COLS, rows), Image.LANCZOS)
     # local contrast: judge each cell against its neighbourhood so a dark face
