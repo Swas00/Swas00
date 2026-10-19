@@ -9,7 +9,7 @@
   </a>
 
   <p align="center">
-    <a href="https://linkedin.com/in/swastiksahu"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+    <a href="https://www.linkedin.com/in/swastik-sahu-linkdin07"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     <a href="mailto:msswastik07@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
     <a href="https://swastiksahu.github.io/swastiksahuportfolio/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/></a>
     <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/></a>
@@ -38,7 +38,7 @@ swastik:
 - ⚡ **Tech Philosophy:** High-performance code, modular components, responsive design, and intuitive UX.
 - 🛠️ **Current Focus:** Deepening knowledge in containerization with Docker, CI/CD pipelines, and microservice architectures.
 - 💬 **Ask me about:** React 19, Tailwind CSS v4, Node.js/Express, REST API design, MongoDB, and DSA.
-- 📫 **Let's connect:** Reach out on [LinkedIn](https://linkedin.com/in/swastiksahu) or drop an email at [msswastik07@gmail.com](mailto:msswastik07@gmail.com).
+- 📫 **Let's connect:** Reach out on [LinkedIn](https://www.linkedin.com/in/swastik-sahu-linkdin07) or drop an email at [msswastik07@gmail.com](mailto:msswastik07@gmail.com).
 
 ---
 
