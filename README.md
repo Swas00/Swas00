@@ -51,7 +51,7 @@
 <!--OPS_START-->
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-swastik-sahu.vercel.app/) | `TypeScript` | today | _Still cooking._ |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | today | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | today | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 16d ago | Resume assistant project |
 | [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 17d ago | _Still cooking._ |
