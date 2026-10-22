@@ -57,7 +57,7 @@
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 19d ago | Resume assistant project |
 | [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 19d ago | _Still cooking._ |
 | [**traana-mvp**](https://github.com/Swas00/traana-mvp) | `JavaScript` | 27d ago | _Still cooking._ |
-| [**Spend_Wise**](https://github.com/Swas00/Spend_Wise) | `JavaScript` | 34d ago | _Still cooking._ |
+| [**Spend_Wise**](https://github.com/Swas00/Spend_Wise) | `JavaScript` | 35d ago | _Still cooking._ |
 | [**liferpg**](https://github.com/Swas00/liferpg) · [live](https://liferpg-six-delta.vercel.app) | `HTML` | 38d ago | _Still cooking._ |
 <!--OPS_END-->
 
