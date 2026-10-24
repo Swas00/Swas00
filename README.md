@@ -52,9 +52,9 @@
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | today | _Still cooking._ |
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | yesterday | _Still cooking._ |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 2d ago | _Still cooking._ |
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `JavaScript` | 2d ago | _Still cooking._ |
-| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 4d ago | Project Workspace Collaboration Platform |
+| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 5d ago | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 21d ago | Resume assistant project |
 | [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 22d ago | _Still cooking._ |
 | [**traana-mvp**](https://github.com/Swas00/traana-mvp) | `JavaScript` | 29d ago | _Still cooking._ |
