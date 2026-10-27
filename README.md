@@ -51,7 +51,7 @@
 <!--OPS_START-->
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
-| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | today | _Still cooking._ |
+| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | yesterday | _Still cooking._ |
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 2d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 4d ago | _Still cooking._ |
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `JavaScript` | 5d ago | _Still cooking._ |
