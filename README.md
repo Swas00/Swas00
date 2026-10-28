@@ -52,7 +52,7 @@
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | today | _Still cooking._ |
-| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | yesterday | _Still cooking._ |
+| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 2d ago | _Still cooking._ |
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 3d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 5d ago | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 8d ago | Project Workspace Collaboration Platform |
