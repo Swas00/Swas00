@@ -53,7 +53,7 @@
 |:--|:--|:--|:--|
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | today | _Still cooking._ |
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | yesterday | _Still cooking._ |
-| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 2d ago | _Still cooking._ |
+| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 3d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 6d ago | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 9d ago | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 26d ago | Resume assistant project |
