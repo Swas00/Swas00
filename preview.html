@@ -15,81 +15,150 @@
       text-align: center;
       margin-top: 6px;
       margin-bottom: 24px;
+      font-family: ui-monospace, 'Courier New', monospace;
     }
   </style>
 </head>
 <body class="bg-[#040918] text-[#eef4ff] antialiased p-4 flex flex-col items-center">
   <div class="w-full max-w-4xl flex flex-col items-center gap-3">
 
-    <!-- HEADER -->
-    <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 330" width="830" height="330" role="img" aria-label="Swas00: full-stack developer and AI explorer">
-<title>Swas00</title>
+    <!-- REDESIGNED 16-BIT RPG TITLE SCREEN HEADER -->
+    <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#283457]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 340" width="830" height="340" role="img" aria-label="Swas00: 16-Bit Retro RPG Profile Title Screen">
+<title>Swas00 // 16-BIT RETRO RPG TITLE SCREEN</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="titleSweep" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#38bdf8"/>
+    <stop offset="45%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#f59e0b"/>
+</linearGradient>
+<linearGradient id="waveFillGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+    <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="ridgeGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#38bdf8"/>
+    <stop offset="50%" stop-color="#67e8f9"/>
+    <stop offset="100%" stop-color="#fbbf24"/>
+</linearGradient>
+<filter id="neonPulse" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<pattern id="crtScan" width="100" height="4" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.22"/>
+</pattern>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
+.rpg-mono { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; }
+.rpg-tag { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; font-size: 11px; font-weight: bold; fill: #ffd753; letter-spacing: 0.16em; }
+.rpg-title { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; font-weight: 900; letter-spacing: -2px; }
+.rpg-sub { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; font-size: 14px; fill: #fbfdff; }
+.rpg-badge-lbl { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; font-size: 9px; font-weight: bold; fill: #8697bd; letter-spacing: 0.12em; text-transform: uppercase; }
+.rpg-badge-val { font-family: ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas; font-size: 13px; font-weight: bold; fill: #fbfdff; }
 </style>
-<radialGradient id="bm"><stop offset="0" stop-color="#2f66ff" stop-opacity=".58"/><stop offset="1" stop-color="#2f66ff" stop-opacity="0"/></radialGradient>
-<radialGradient id="bv"><stop offset="0" stop-color="#7ab6ff" stop-opacity=".46"/><stop offset="1" stop-color="#7ab6ff" stop-opacity="0"/></radialGradient>
-<radialGradient id="bc"><stop offset="0" stop-color="#ffb62e" stop-opacity=".40"/><stop offset="1" stop-color="#ffb62e" stop-opacity="0"/></radialGradient>
-<linearGradient id="wavefill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc7ff" stop-opacity=".34"/><stop offset="1" stop-color="#8fc7ff" stop-opacity="0"/></linearGradient>
-<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity=".09"/></pattern>
-<clipPath id="card"><rect width="830" height="330" rx="18"/></clipPath></defs>
-<g clip-path="url(#card)">
-<rect width="830" height="330" fill="#040918"/>
-<circle cx="170" cy="110" r="300" fill="url(#bm)"><animateTransform attributeName="transform" type="translate" values="0 0;60 30;0 0" dur="19s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>
-<circle cx="660" cy="40" r="320" fill="url(#bv)"><animateTransform attributeName="transform" type="translate" values="0 0;-70 40;0 0" dur="23s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>
-<circle cx="470" cy="300" r="280" fill="url(#bc)"><animateTransform attributeName="transform" type="translate" values="0 0;50 -50;0 0" dur="27s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/></circle>
-<rect width="830" height="330" fill="url(#dots)"/>
-<path d="M0.0,316.0 C2.7,316.0 10.6,316.0 16.0,316.0 C21.3,316.0 26.6,316.0 31.9,316.0 C37.2,316.0 42.6,316.0 47.9,316.0 C53.2,316.0 58.5,316.0 63.8,316.0 C69.2,316.0 74.5,316.0 79.8,316.0 C85.1,316.0 90.4,316.0 95.8,316.0 C101.1,316.0 106.4,316.0 111.7,316.0 C117.1,316.0 122.4,316.0 127.7,316.0 C133.0,316.0 138.3,316.0 143.7,316.0 C149.0,316.0 154.3,316.0 159.6,316.0 C164.9,316.0 170.3,316.0 175.6,316.0 C180.9,316.0 186.2,316.0 191.5,316.0 C196.9,316.0 202.2,316.0 207.5,316.0 C212.8,316.0 218.1,316.0 223.5,316.0 C228.8,316.0 234.1,316.0 239.4,316.0 C244.7,316.0 250.1,316.0 255.4,316.0 C260.7,316.0 266.0,316.0 271.3,316.0 C276.7,316.0 282.0,316.0 287.3,316.0 C292.6,316.0 297.9,316.0 303.3,316.0 C308.6,316.0 313.9,317.8 319.2,316.0 C324.6,314.2 329.9,305.4 335.2,305.4 C340.5,305.4 345.8,314.2 351.2,316.0 C356.5,317.8 361.8,316.0 367.1,316.0 C372.4,316.0 377.8,316.0 383.1,316.0 C388.4,316.0 393.7,316.0 399.0,316.0 C404.4,316.0 409.7,316.2 415.0,316.0 C420.3,315.8 425.6,314.9 431.0,314.9 C436.3,314.9 441.6,315.8 446.9,316.0 C452.2,316.2 457.6,316.2 462.9,316.0 C468.2,315.8 473.5,314.9 478.8,314.9 C484.2,314.9 489.5,316.5 494.8,316.0 C500.1,315.5 505.4,312.7 510.8,311.9 C516.1,311.1 521.4,310.4 526.7,311.1 C532.1,311.8 537.4,315.5 542.7,316.0 C548.0,316.5 553.3,314.3 558.7,314.3 C564.0,314.3 569.3,315.7 574.6,316.0 C579.9,316.3 585.3,316.0 590.6,316.0 C595.9,316.0 601.2,316.0 606.5,316.0 C611.9,316.0 617.2,316.0 622.5,316.0 C627.8,316.0 633.1,316.5 638.5,316.0 C643.8,315.5 649.1,314.5 654.4,313.2 C659.7,312.0 665.1,307.9 670.4,308.4 C675.7,308.8 681.0,314.7 686.3,316.0 C691.7,317.3 697.0,316.0 702.3,316.0 C707.6,316.0 712.9,316.5 718.3,316.0 C723.6,315.5 728.9,313.1 734.2,312.8 C739.6,312.4 744.9,314.7 750.2,313.7 C755.5,312.7 760.8,306.8 766.2,306.9 C771.5,306.9 776.8,313.6 782.1,314.3 C787.4,314.9 792.8,316.2 798.1,310.7 C803.4,305.3 808.7,292.9 814.0,281.4 C819.4,270.0 827.3,248.6 830.0,242.0 L830,330 L0,330 Z" fill="url(#wavefill)"/>
-<path d="M0.0,316.0 C2.7,316.0 10.6,316.0 16.0,316.0 C21.3,316.0 26.6,316.0 31.9,316.0 C37.2,316.0 42.6,316.0 47.9,316.0 C53.2,316.0 58.5,316.0 63.8,316.0 C69.2,316.0 74.5,316.0 79.8,316.0 C85.1,316.0 90.4,316.0 95.8,316.0 C101.1,316.0 106.4,316.0 111.7,316.0 C117.1,316.0 122.4,316.0 127.7,316.0 C133.0,316.0 138.3,316.0 143.7,316.0 C149.0,316.0 154.3,316.0 159.6,316.0 C164.9,316.0 170.3,316.0 175.6,316.0 C180.9,316.0 186.2,316.0 191.5,316.0 C196.9,316.0 202.2,316.0 207.5,316.0 C212.8,316.0 218.1,316.0 223.5,316.0 C228.8,316.0 234.1,316.0 239.4,316.0 C244.7,316.0 250.1,316.0 255.4,316.0 C260.7,316.0 266.0,316.0 271.3,316.0 C276.7,316.0 282.0,316.0 287.3,316.0 C292.6,316.0 297.9,316.0 303.3,316.0 C308.6,316.0 313.9,317.8 319.2,316.0 C324.6,314.2 329.9,305.4 335.2,305.4 C340.5,305.4 345.8,314.2 351.2,316.0 C356.5,317.8 361.8,316.0 367.1,316.0 C372.4,316.0 377.8,316.0 383.1,316.0 C388.4,316.0 393.7,316.0 399.0,316.0 C404.4,316.0 409.7,316.2 415.0,316.0 C420.3,315.8 425.6,314.9 431.0,314.9 C436.3,314.9 441.6,315.8 446.9,316.0 C452.2,316.2 457.6,316.2 462.9,316.0 C468.2,315.8 473.5,314.9 478.8,314.9 C484.2,314.9 489.5,316.5 494.8,316.0 C500.1,315.5 505.4,312.7 510.8,311.9 C516.1,311.1 521.4,310.4 526.7,311.1 C532.1,311.8 537.4,315.5 542.7,316.0 C548.0,316.5 553.3,314.3 558.7,314.3 C564.0,314.3 569.3,315.7 574.6,316.0 C579.9,316.3 585.3,316.0 590.6,316.0 C595.9,316.0 601.2,316.0 606.5,316.0 C611.9,316.0 617.2,316.0 622.5,316.0 C627.8,316.0 633.1,316.5 638.5,316.0 C643.8,315.5 649.1,314.5 654.4,313.2 C659.7,312.0 665.1,307.9 670.4,308.4 C675.7,308.8 681.0,314.7 686.3,316.0 C691.7,317.3 697.0,316.0 702.3,316.0 C707.6,316.0 712.9,316.5 718.3,316.0 C723.6,315.5 728.9,313.1 734.2,312.8 C739.6,312.4 744.9,314.7 750.2,313.7 C755.5,312.7 760.8,306.8 766.2,306.9 C771.5,306.9 776.8,313.6 782.1,314.3 C787.4,314.9 792.8,316.2 798.1,310.7 C803.4,305.3 808.7,292.9 814.0,281.4 C819.4,270.0 827.3,248.6 830.0,242.0" fill="none" stroke="url(#aurora)" stroke-width="2.2" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;.18;.9;1" dur="16s" repeatCount="indefinite"/></path>
-<text x="50" y="92" class="mono" font-size="12" letter-spacing="3" fill="#ffc233">FULL-STACK  &#183;  AI &amp; GENAI  &#183;  INDIA</text>
-<text x="44" y="186" font-size="104" font-weight="800" letter-spacing="-4" fill="url(#aurora)">Swastik</text>
-<text x="50" y="228" font-size="22" fill="#eef4ff" opacity="0">Full-stack software developer.<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0;.03;0.293;0.323;1" dur="12.600000000000001s" repeatCount="indefinite"/></text>
-<text x="50" y="228" font-size="22" fill="#eef4ff" opacity="0">Exploring GenAI, LLMs &amp; LangChain.<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333;0.363;0.627;0.657;1" dur="12.600000000000001s" repeatCount="indefinite"/></text>
-<text x="50" y="228" font-size="22" fill="#eef4ff" opacity="0">MCA student &amp; passionate builder.<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.667;0.697;0.960;0.990;1" dur="12.600000000000001s" repeatCount="indefinite"/></text>
-<g><rect x="560" y="56" width="228" height="44" rx="12" fill="#111d40" fill-opacity=".72" stroke="#243566"/><circle cx="580" cy="78" r="4" fill="#34d399"><animate attributeName="opacity" values="1;.3;1" dur="2.0s" repeatCount="indefinite"/></circle><text x="594" y="75" class="label">STATUS</text><text x="594" y="92" font-size="14" font-weight="600" fill="#eef4ff">Online</text></g>
-<g><rect x="560" y="108" width="228" height="44" rx="12" fill="#111d40" fill-opacity=".72" stroke="#243566"/><circle cx="580" cy="130" r="4" fill="#8fc7ff"><animate attributeName="opacity" values="1;.3;1" dur="2.6s" repeatCount="indefinite"/></circle><text x="594" y="127" class="label">LAST PUSH</text><text x="594" y="144" font-size="14" font-weight="600" fill="#eef4ff">verity (today)</text></g>
-<g><rect x="560" y="160" width="228" height="44" rx="12" fill="#111d40" fill-opacity=".72" stroke="#243566"/><circle cx="580" cy="182" r="4" fill="#ffc233"><animate attributeName="opacity" values="1;.3;1" dur="3.2s" repeatCount="indefinite"/></circle><text x="594" y="179" class="label">STREAK</text><text x="594" y="196" font-size="14" font-weight="600" fill="#eef4ff">15 days</text></g>
+</defs>
+<rect width="830" height="340" fill="#070a16"/>
+<rect x="8" y="8" width="814" height="324" rx="6" fill="#0c1224" stroke="#283457" stroke-width="4"/>
+<rect x="12" y="12" width="806" height="316" rx="4" fill="none" stroke="#f3be34" stroke-width="2.5"/>
+<rect x="16" y="16" width="798" height="308" rx="3" fill="none" stroke="#04060d" stroke-width="1.5"/>
+<rect x="11" y="11" width="6" height="6" fill="#fff0a3"/>
+<rect x="13" y="13" width="2" height="2" fill="#04060d"/>
+<rect x="813" y="11" width="6" height="6" fill="#fff0a3"/>
+<rect x="815" y="13" width="2" height="2" fill="#04060d"/>
+<rect x="11" y="323" width="6" height="6" fill="#fff0a3"/>
+<rect x="13" y="325" width="2" height="2" fill="#04060d"/>
+<rect x="813" y="323" width="6" height="6" fill="#fff0a3"/>
+<rect x="815" y="325" width="2" height="2" fill="#04060d"/>
+<rect x="26" y="5" width="260" height="22" fill="#0c1224" stroke="#f3be34" stroke-width="1.8"/>
+<text x="36" y="20" class="rpg-tag" fill="#ffd753">★ RETRO RPG EDITION v2.6 ★</text>
+<text x="804" y="22" class="rpg-mono" font-size="10" fill="#8697bd" text-anchor="end">PRESS [START] TO INITIALIZE</text>
+<rect x="45" y="42" width="2" height="2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.8s" begin="0.2s" repeatCount="indefinite"/></rect>
+<rect x="120" y="75" width="2.5" height="2.5" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="0.7s" repeatCount="indefinite"/></rect>
+<rect x="210" y="35" width="1.8" height="1.8" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="3.1s" begin="1.2s" repeatCount="indefinite"/></rect>
+<rect x="280" y="80" width="2" height="2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.0s" begin="0.4s" repeatCount="indefinite"/></rect>
+<rect x="360" y="48" width="2.2" height="2.2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.7s" begin="0.9s" repeatCount="indefinite"/></rect>
+<rect x="440" y="70" width="1.5" height="1.5" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="1.9s" begin="1.5s" repeatCount="indefinite"/></rect>
+<rect x="510" y="38" width="2.5" height="2.5" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="3.3s" begin="0.1s" repeatCount="indefinite"/></rect>
+<rect x="580" y="92" width="1.8" height="1.8" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.2s" begin="1.1s" repeatCount="indefinite"/></rect>
+<rect x="720" y="45" width="2.2" height="2.2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.5s" begin="0.6s" repeatCount="indefinite"/></rect>
+<rect x="90" y="120" width="1.5" height="1.5" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.8s" begin="1.3s" repeatCount="indefinite"/></rect>
+<rect x="160" y="155" width="2" height="2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.1s" begin="0.5s" repeatCount="indefinite"/></rect>
+<rect x="490" y="130" width="2" height="2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="3.0s" begin="1.7s" repeatCount="indefinite"/></rect>
+<rect x="330" y="140" width="1.6" height="1.6" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.3s" begin="0.8s" repeatCount="indefinite"/></rect>
+<rect x="760" y="110" width="2.4" height="2.4" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.6s" begin="0.3s" repeatCount="indefinite"/></rect>
+<rect x="680" y="150" width="1.8" height="1.8" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="3.2s" begin="1.4s" repeatCount="indefinite"/></rect>
+<rect x="75" y="240" width="2" height="2" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.2s" begin="0.9s" repeatCount="indefinite"/></rect>
+<rect x="230" y="260" width="2.5" height="2.5" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.9s" begin="0.2s" repeatCount="indefinite"/></rect>
+<rect x="420" y="270" width="1.8" height="1.8" fill="#fbfdff"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></rect>
+<polygon points="16,280 70,245 130,275 190,230 250,265 320,220 390,260 460,235 540,270 620,225 700,255 770,215 814,250 814,324 16,324" fill="#0b1329" opacity="0.75"/>
+<path d="M16.0,307.0 C23.0,305.4 44.0,300.1 58.0,297.6 C72.0,295.2 86.0,291.2 100.0,292.2 C114.0,293.2 128.0,305.3 142.0,303.7 C156.0,302.0 170.0,287.4 184.0,282.4 C198.0,277.4 212.0,272.4 226.0,273.6 C240.0,274.8 254.0,288.9 268.0,289.6 C282.0,290.4 296.0,282.6 310.0,277.9 C324.0,273.2 338.0,262.9 352.0,261.5 C366.0,260.1 380.0,265.9 394.0,269.4 C408.0,272.9 422.0,278.6 436.0,282.4 C450.0,286.2 464.0,293.3 478.0,292.2 C492.0,291.1 506.0,281.5 520.0,275.7 C534.0,270.0 548.0,259.1 562.0,257.7 C576.0,256.3 590.0,264.0 604.0,267.4 C618.0,270.8 632.0,278.9 646.0,277.9 C660.0,276.9 674.0,262.9 688.0,261.5 C702.0,260.1 716.0,270.7 730.0,269.4 C744.0,268.2 758.0,253.0 772.0,254.0 C786.0,255.0 807.0,272.1 814.0,275.7 L814,324 L16,324 Z" fill="url(#waveFillGrad)"/>
+<path d="M16.0,307.0 C23.0,305.4 44.0,300.1 58.0,297.6 C72.0,295.2 86.0,291.2 100.0,292.2 C114.0,293.2 128.0,305.3 142.0,303.7 C156.0,302.0 170.0,287.4 184.0,282.4 C198.0,277.4 212.0,272.4 226.0,273.6 C240.0,274.8 254.0,288.9 268.0,289.6 C282.0,290.4 296.0,282.6 310.0,277.9 C324.0,273.2 338.0,262.9 352.0,261.5 C366.0,260.1 380.0,265.9 394.0,269.4 C408.0,272.9 422.0,278.6 436.0,282.4 C450.0,286.2 464.0,293.3 478.0,292.2 C492.0,291.1 506.0,281.5 520.0,275.7 C534.0,270.0 548.0,259.1 562.0,257.7 C576.0,256.3 590.0,264.0 604.0,267.4 C618.0,270.8 632.0,278.9 646.0,277.9 C660.0,276.9 674.0,262.9 688.0,261.5 C702.0,260.1 716.0,270.7 730.0,269.4 C744.0,268.2 758.0,253.0 772.0,254.0 C786.0,255.0 807.0,272.1 814.0,275.7" fill="none" stroke="url(#ridgeGrad)" stroke-width="2.6" stroke-linecap="round" filter="url(#neonPulse)"/>
+<text x="44" y="82" class="rpg-tag">⚔ FULL-STACK · AI &amp; GENAI ARCHMAGE · INDIA ⚔</text>
+<text x="44" y="174" class="rpg-title" font-size="94" fill="#060914">Swastik</text>
+<text x="42" y="172" class="rpg-title" font-size="94" fill="#1e3a8a">Swastik</text>
+<text x="40" y="170" class="rpg-title" font-size="94" fill="url(#titleSweep)">Swastik</text>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0;.03;0.293;0.323;1" dur="12.600000000000001s" repeatCount="indefinite"/><text x="44" y="214" class="rpg-sub" font-size="15" fill="#ffd753">► </text><text x="64" y="214" class="rpg-sub" font-size="15">Full-stack software developer.</text><text x="338" y="214" class="rpg-mono" font-size="15" fill="#45ddff">_<animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/></text></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333;0.363;0.627;0.657;1" dur="12.600000000000001s" repeatCount="indefinite"/><text x="44" y="214" class="rpg-sub" font-size="15" fill="#ffd753">► </text><text x="64" y="214" class="rpg-sub" font-size="15">Exploring GenAI, LLMs &amp; LangChain.</text><text x="374" y="214" class="rpg-mono" font-size="15" fill="#45ddff">_<animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/></text></g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.667;0.697;0.960;0.990;1" dur="12.600000000000001s" repeatCount="indefinite"/><text x="44" y="214" class="rpg-sub" font-size="15" fill="#ffd753">► </text><text x="64" y="214" class="rpg-sub" font-size="15">MCA student &amp; passionate builder.</text><text x="365" y="214" class="rpg-mono" font-size="15" fill="#45ddff">_<animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/></text></g>
+<rect x="44" y="238" width="145" height="24" fill="#0d1630" stroke="#25355c" stroke-width="1.2"/>
+<text x="54" y="254" class="rpg-mono" font-size="10" fill="#45ddff">EXP MULTIPLIER: 2.5X</text>
+<rect x="198" y="238" width="135" height="24" fill="#0d1630" stroke="#25355c" stroke-width="1.2"/>
+<text x="208" y="254" class="rpg-mono" font-size="10" fill="#37f394">ALIGNMENT: PROD</text>
+<g transform="translate(535, 50)">
+<rect width="255" height="48" fill="#0b1226" stroke="#283457" stroke-width="1.5"/>
+<rect x="2" y="2" width="251" height="44" fill="none" stroke="#182342" stroke-width="1"/>
+<rect x="8" y="8" width="32" height="32" fill="#070c1a" stroke="#37f394" stroke-width="1.2"/>
+<text x="24" y="28" class="rpg-mono" font-size="14" text-anchor="middle">💚</text>
+<text x="48" y="20" class="rpg-badge-lbl">PARTY MEMBER</text>
+<text x="48" y="36" class="rpg-badge-val" fill="#37f394">PLAYER 1: ONLINE</text>
 </g>
-<rect x=".5" y=".5" width="829" height="329" rx="18" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+<g transform="translate(535, 108)">
+<rect width="255" height="48" fill="#0b1226" stroke="#283457" stroke-width="1.5"/>
+<rect x="2" y="2" width="251" height="44" fill="none" stroke="#182342" stroke-width="1"/>
+<rect x="8" y="8" width="32" height="32" fill="#070c1a" stroke="#45ddff" stroke-width="1.2"/>
+<text x="24" y="28" class="rpg-mono" font-size="14" text-anchor="middle">💠</text>
+<text x="48" y="20" class="rpg-badge-lbl">ACTIVE QUEST</text>
+<text x="48" y="36" class="rpg-badge-val" fill="#45ddff">Swas00 (today)</text>
+</g>
+<g transform="translate(535, 166)">
+<rect width="255" height="48" fill="#0b1226" stroke="#283457" stroke-width="1.5"/>
+<rect x="2" y="2" width="251" height="44" fill="none" stroke="#182342" stroke-width="1"/>
+<rect x="8" y="8" width="32" height="32" fill="#070c1a" stroke="#ffd753" stroke-width="1.2"/>
+<text x="24" y="28" class="rpg-mono" font-size="14" text-anchor="middle">🔥</text>
+<text x="48" y="20" class="rpg-badge-lbl">STREAK COMBO</text>
+<text x="48" y="36" class="rpg-badge-val" fill="#ffd753">15 DAYS (BUFFED)</text>
+</g>
+<rect x="16" y="16" width="798" height="308" fill="url(#crtScan)" pointer-events="none"/>
 </svg>
     </div>
 
     <!-- NAVIGATION LINKS -->
-    <div class="flex justify-center gap-6 my-2 text-sm text-[#4f86ff]">
-      <a href="https://portfolio-swastik-sahu.vercel.app/" target="_blank" class="hover:underline">Portfolio</a> ·
-      <a href="https://www.linkedin.com/in/swastik-sahu-linkdin07/" target="_blank" class="hover:underline">LinkedIn</a> ·
-      <a href="mailto:swastiks014@gmail.com" class="hover:underline">Email</a> ·
-      <a href="https://github.com/Swas00?tab=repositories" target="_blank" class="hover:underline">Repositories</a>
+    <div class="flex justify-center gap-6 my-2 text-sm text-[#38bdf8] font-mono">
+      <a href="https://portfolio-swastik-sahu.vercel.app/" target="_blank" class="hover:underline">[PORTFOLIO]</a> ·
+      <a href="https://www.linkedin.com/in/swastik-sahu-linkdin07/" target="_blank" class="hover:underline">[LINKEDIN]</a> ·
+      <a href="mailto:swastiks014@gmail.com" class="hover:underline">[EMAIL]</a> ·
+      <a href="https://github.com/Swas00?tab=repositories" target="_blank" class="hover:underline">[REPOSITORIES]</a>
     </div>
 
     <!-- 01 CHARACTER STATUS -->
     <div class="w-full svg-box drop-shadow-md mt-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Character status">
 <title>Character status</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">01</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Character status</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[01]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ CHARACTER STATUS</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#283457]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 440" width="830" height="440" role="img" aria-label="Retro 16-Bit RPG Character Sheet for Swas00">
 <title>CHARACTER STATUS // Swas00</title>
@@ -279,22 +348,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Operator dossier">
 <title>Operator dossier</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">02</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Operator dossier</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[02]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ OPERATOR DOSSIER</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 530" width="830" height="530" role="img" aria-label="Halftone portrait of Swas00 with live GitHub stats">
 <title>OPERATOR DOSSIER // Swas00</title>
@@ -391,22 +459,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Vitals">
 <title>Vitals</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">03</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Vitals</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[03]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ VITALS</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 350" width="830" height="350" role="img" aria-label="Activity rings, a circadian push-time clock and a 26 week momentum chart">
 <title>VITALS // Swas00</title>
@@ -518,22 +585,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Contribution skyline">
 <title>Contribution skyline</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">04</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Contribution skyline</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[04]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ CONTRIBUTION SKYLINE</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 460" width="830" height="460" role="img" aria-label="My last year of contributions as an animated isometric night city: each day is a building">
 <title>CONTRIBUTION SKYLINE // Swas00</title>
@@ -1178,22 +1244,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Repo neural map">
 <title>Repo neural map</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">05</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Repo neural map</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[05]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ REPO NEURAL MAP</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 520" width="830" height="520" role="img" aria-label="Neural map of 25 repositories in 5 language clusters with 32 connections; 4 were pushed in the last 7 days.">
 <title>REPO NEURAL MAP</title>
@@ -1615,22 +1680,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Contribution galaxy">
 <title>Contribution galaxy</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">06</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Contribution galaxy</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[06]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ CONTRIBUTION GALAXY</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 480" width="830" height="480" role="img" aria-label="Contribution galaxy: each star is one day of commits">
 <title>CONTRIBUTION GALAXY // Swas00</title>
@@ -2171,22 +2235,21 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
     <div class="w-full svg-box drop-shadow-md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Active ops: flight recorder">
 <title>Active ops: flight recorder</title>
 <defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8" stop-opacity=".7"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity=".7"/></linearGradient>
 <style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">07</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Active ops: flight recorder</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
+.mono{font-family:ui-monospace, 'Courier New', monospace, 'SF Mono', Menlo, Consolas;}
+</style>
+<clipPath id="bar"><rect width="830" height="44" rx="6"/></clipPath>
+</defs>
+<g clip-path="url(#bar)"><rect width="830" height="44" fill="#0c1224"/>
+<rect width="830" height="44" fill="url(#aurora)" opacity=".08"/>
+<rect width="5" height="44" fill="url(#auroraV)"/>
+<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".18"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
+<text x="24" y="27" class="mono" font-size="12" font-weight="bold" fill="#45ddff">[07]</text>
+<text x="64" y="28" class="mono" font-size="14" font-weight="bold" fill="#fbfdff">▶ ACTIVE OPS: FLIGHT RECORDER</text>
+<rect x="1" y="1" width="828" height="42" rx="5" fill="none" stroke="#f3be34" stroke-width="1.2"/>
 </svg></div>
     <div class="w-full svg-box rounded-xl overflow-hidden shadow-2xl border border-[#243566]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 416" width="830" height="416" role="img" aria-label="Push activity for the 6 most recently active repositories over the last 14 days. verity: 17 pushes, last 1d ago; scamalert: 34 pushes, last 2d ago; sovereign-proof: 3 pushes, last 4d ago; Swas00: 5 pushes, last 10d ago; portfolio: 1 pushes, last 10d ago; letscollab: 13 pushes, last 11d ago.">
 <title>ACTIVE OPS // flight recorder</title>
@@ -2609,89 +2672,6 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
 <rect x=".5" y=".5" width="829" height="415" rx="16" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
 </svg></div>
     <div class="sub-caption">My last two weeks of pushes, one lane per repo. Taller bar, busier window.</div>
-
-    <!-- OPS TABLE -->
-    <div class="w-full bg-[#08112b] border border-[#243566] rounded-xl p-4 my-2 overflow-x-auto shadow-xl">
-      <table class="w-full text-left text-sm border-collapse">
-        <thead>
-          <tr class="border-b border-[#243566] text-[#8fc7ff]">
-            <th class="py-2 px-3 font-semibold">Repo</th>
-            <th class="py-2 px-3 font-semibold">Stack</th>
-            <th class="py-2 px-3 font-semibold">Last push</th>
-            <th class="py-2 px-3 font-semibold">Brief</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-[#132047] text-gray-200">
-          <tr><td class="py-2 px-3 font-semibold"><a href="https://github.com/Swas00/verity" class="text-blue-400 hover:underline">verity</a> · <a href="https://verity-two-delta.vercel.app" class="text-xs text-cyan-400">live</a></td><td class="py-2 px-3"><code class="bg-[#111d40] px-1.5 py-0.5 rounded text-xs">JavaScript</code></td><td class="py-2 px-3">today</td><td class="py-2 px-3 italic text-gray-400">Still cooking.</td></tr>
-          <tr><td class="py-2 px-3 font-semibold"><a href="https://github.com/Swas00/scamalert" class="text-blue-400 hover:underline">scamalert</a> · <a href="https://scamalert-tau.vercel.app" class="text-xs text-cyan-400">live</a></td><td class="py-2 px-3"><code class="bg-[#111d40] px-1.5 py-0.5 rounded text-xs">JavaScript</code></td><td class="py-2 px-3">today</td><td class="py-2 px-3 italic text-gray-400">Still cooking.</td></tr>
-          <tr><td class="py-2 px-3 font-semibold"><a href="https://github.com/Swas00/sovereign-proof" class="text-blue-400 hover:underline">sovereign-proof</a></td><td class="py-2 px-3"><code class="bg-[#111d40] px-1.5 py-0.5 rounded text-xs">TypeScript</code></td><td class="py-2 px-3">4d ago</td><td class="py-2 px-3 italic text-gray-400">Still cooking.</td></tr>
-          <tr><td class="py-2 px-3 font-semibold"><a href="https://github.com/Swas00/portfolio" class="text-blue-400 hover:underline">portfolio</a> · <a href="https://portfolio-mu-weld-68.vercel.app" class="text-xs text-cyan-400">live</a></td><td class="py-2 px-3"><code class="bg-[#111d40] px-1.5 py-0.5 rounded text-xs">TypeScript</code></td><td class="py-2 px-3">7d ago</td><td class="py-2 px-3 italic text-gray-400">Still cooking.</td></tr>
-          <tr><td class="py-2 px-3 font-semibold"><a href="https://github.com/Swas00/letscollab" class="text-blue-400 hover:underline">letscollab</a> · <a href="https://letscollab-delta.vercel.app" class="text-xs text-cyan-400">live</a></td><td class="py-2 px-3"><code class="bg-[#111d40] px-1.5 py-0.5 rounded text-xs">TypeScript</code></td><td class="py-2 px-3">10d ago</td><td class="py-2 px-3 text-gray-300">Project Workspace Collaboration Platform</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- 08 CTF -->
-    <div class="w-full svg-box drop-shadow-md mt-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Intercepted transmission">
-<title>Intercepted transmission</title>
-<defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">08</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Intercepted transmission</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
-</svg></div>
-    <div class="w-full bg-[#08112b] border border-[#243566] rounded-xl p-5 my-2 shadow-xl">
-      <div class="text-center font-bold text-lg mb-2">A three-stage CTF is hidden in this profile. Crack it to join the Hall of Fame.</div>
-      <div class="bg-[#040918] p-3 rounded font-mono text-xs text-yellow-300 my-2 overflow-x-auto border border-[#16234f]">
-        STAGE 1 / 3 (base64):<br/>
-        U1RBR0UgMS8zIDo6IG5pY2UsIHlvdSBkZWNvZGVkIGJhc2U2NC4gdGhlIHJlcG8gbWFwIGlzIG1vcmUgdGhhbiBhIHBpY3R1cmU6IG9wZW4gYXNzZXRzL25ldXJhbC5zdmcgYXMgcmF3IHRleHQgYW5kIHJlYWQgaXRzICZsdDtkZXNjJmd0OyBlbGVtZW50LiBpdCBpcyBoZXgu
-      </div>
-      <div class="text-center text-xs text-gray-400 mt-2">Submit your proof: <code>echo -n "SWASTIK{flag}:your-login" | sha256sum | cut -c1-12</code></div>
-    </div>
-
-    <!-- 09 ARSENAL -->
-    <div class="w-full svg-box drop-shadow-md mt-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 44" width="830" height="44" role="img" aria-label="Arsenal">
-<title>Arsenal</title>
-<defs>
-<linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="auroraV" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#4f86ff"/><stop offset="50%" stop-color="#f2f7ff"/><stop offset="100%" stop-color="#ffc233"/></linearGradient>
-<linearGradient id="bdr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f86ff" stop-opacity=".6"/><stop offset=".5" stop-color="#8fc7ff" stop-opacity=".3"/><stop offset="1" stop-color="#ffc233" stop-opacity=".6"/></linearGradient>
-<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<style>
-text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
-.mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
-.label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
-</style><clipPath id="bar"><rect width="830" height="44" rx="12"/></clipPath></defs>
-<g clip-path="url(#bar)"><rect width="830" height="44" fill="#08112b"/>
-<rect width="830" height="44" fill="url(#aurora)" opacity=".07"/>
-<rect width="4" height="44" fill="url(#auroraV)"/>
-<rect x="-120" width="120" height="44" fill="url(#aurora)" opacity=".16"><animate attributeName="x" values="-120;830;830" keyTimes="0;.55;1" dur="9s" repeatCount="indefinite"/></rect></g>
-<text x="24" y="27" class="mono" font-size="12" fill="#8fc7ff">09</text>
-<text x="54" y="28" font-size="16" font-weight="600" fill="#eef4ff">Arsenal</text>
-<rect x=".5" y=".5" width="829" height="43" rx="12" fill="none" stroke="url(#bdr)" stroke-width="1.2"/>
-</svg></div>
-    <div class="w-full bg-[#08112b] border border-[#243566] rounded-xl p-6 my-2 text-center shadow-xl">
-      <img src="https://skillicons.dev/icons?i=py,js,ts,react,nextjs,nodejs,express,tailwind,docker,git,github,vscode,c,cpp,java,mongodb,postgres,postman&theme=dark" alt="Tech Stack" class="mx-auto my-3" />
-      <div class="flex flex-wrap justify-center gap-2 mt-4">
-        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=ffc233&labelColor=08112b" alt="LangChain" />
-        <img src="https://img.shields.io/badge/Generative_AI-8A2BE2?style=for-the-badge&logo=openai&logoColor=ffc233&labelColor=08112b" alt="Generative AI" />
-        <img src="https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apachecassandra&logoColor=ffc233&labelColor=08112b" alt="Cassandra" />
-        <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=ffc233&labelColor=08112b" alt="Oracle" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=ffc233&labelColor=08112b" alt="Docker" />
-      </div>
-    </div>
 
   </div>
 </body>
