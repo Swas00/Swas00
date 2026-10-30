@@ -11,26 +11,28 @@ Your profile is now powered by the full **Kaushik-inspired Data Visualization & 
    - Real-time weekly contribution totals wave
    - Rotating roles: *"Full-stack software developer"*, *"Exploring GenAI, LLMs & LangChain"*, *"MCA student & passionate builder"*
    - Live glass status chips showing: `STATUS: Online`, `LAST PUSH: <repo>`, `STREAK: <n> days`
-2. **Operator Dossier (`assets/dossier.svg`)**:
+2. **Retro 16-Bit RPG Character Sheet (`assets/rpg_sheet.svg`)**:
+   - Procedural 16-bit JRPG status screen: animated idle breathing pixel hero, HP (Streak Vitality), MP (Commit Velocity), EXP to next level, Core Attributes (STR, INT, AGI, VIT, CHA, LUK), equipped stack weapons, and live active questline
+3. **Operator Dossier (`assets/dossier.svg`)**:
    - Halftone portrait rendered directly from your GitHub profile picture (`Swas00.png`)
    - Real-time statistics: Public Repos, Stars, Followers, Streak, Commit Count, and Language Mix
-3. **Live Vitals (`assets/vitals.svg`)**:
+4. **Live Vitals (`assets/vitals.svg`)**:
    - 3 live gauges: Streak & consistency rings, 24-hour push clock (shows what time of day you ship code), and 26-week momentum comparison
-4. **Contribution Skyline (`assets/skyline.svg`)**:
+5. **Contribution Skyline (`assets/skyline.svg`)**:
    - 3D procedural isometric city: 1 building per day, height = commits, lit windows for active days, beacon marking your peak commit day
-5. **Repo Neural Map (`assets/neural.svg`)**:
+6. **Repo Neural Map (`assets/neural.svg`)**:
    - Every one of your repositories is a neuron clustered by language and wired to repos with shared topics/dependencies, with pulse rings on active repos
-6. **Contribution Galaxy (`assets/galaxy.svg`)**:
+7. **Contribution Galaxy (`assets/galaxy.svg`)**:
    - 365 days of contributions mapped as an astronomical spiral galaxy (core is today)
    - Interactive visitor star guestbook (visitors can submit an issue to add their orbiting star!)
-7. **Active Ops Flight Recorder (`assets/ops.svg` & Table)**:
+8. **Active Ops Flight Recorder (`assets/ops.svg` & Table)**:
    - 2-week push histogram per repository
    - Markdown mission-brief table auto-updated by `explorer.py` with your latest public repos (`portfolio`, `letscollab`, `Spend_Wise`, `LIFE-RPG`, etc.)
-8. **Interactive Transmission CTF (`assets/div-ctf.svg`)**:
+9. **Interactive Transmission CTF (`assets/div-ctf.svg`)**:
    - 3-stage CTF challenge hidden in your profile with automated proof verification and Hall of Fame
-9. **Arsenal**:
-   - Curated skill icons (`skillicons.dev`) and custom badges matching your royal/dark palette
-10. **Full Automation (`.github/workflows/showcase.yml`)**:
+10. **Arsenal**:
+    - Curated skill icons (`skillicons.dev`) and custom badges matching your royal/dark palette
+11. **Full Automation (`.github/workflows/showcase.yml`)**:
     - Runs every 6 hours and on **every push to `main`**
     - Uses `GITHUB_TOKEN` to recalculate all stats, re-render all SVGs directly into `assets/`, update the `README.md` table, and commit automatically!
 
@@ -38,11 +40,16 @@ Your profile is now powered by the full **Kaushik-inspired Data Visualization & 
 
 ### 🚀 How to Push to GitHub in 1 Step
 
-All 15 SVGs are already compiled and committed locally in this repository. Push them to your GitHub profile:
+All 16 SVGs are compiled and ready in this repository. Push them to your GitHub profile repository (`Swas00/Swas00`):
 
 ```bash
-cd /Users/swastiksahu/.gemini/antigravity/scratch/github-profile-readme
-git push origin main --force
+cd /Users/swastiksahu/Downloads/Swas00-main
+git init
+git branch -M main
+git remote add origin https://github.com/Swas00/Swas00.git
+git add .
+git commit -m "feat: complete showcase profile with 16-bit RPG character sheet"
+git push -u origin main --force
 ```
 
 ---

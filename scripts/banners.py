@@ -18,14 +18,15 @@ NAME = "Swastik"
 ROLES = ["Full-stack software developer.", "Exploring GenAI, LLMs & LangChain.", "MCA student & passionate builder."]
 
 DIVIDERS = [  # (file, number, label)
-    ("div-dossier", "01", "Operator dossier"),
-    ("div-vitals", "02", "Vitals"),
-    ("div-skyline", "03", "Contribution skyline"),
-    ("div-neural", "04", "Repo neural map"),
-    ("div-galaxy", "05", "Contribution galaxy"),
-    ("div-ops", "06", "Active ops: flight recorder"),
-    ("div-ctf", "07", "Intercepted transmission"),
-    ("div-arsenal", "08", "Arsenal"),
+    ("div-rpg", "01", "Character status"),
+    ("div-dossier", "02", "Operator dossier"),
+    ("div-vitals", "03", "Vitals"),
+    ("div-skyline", "04", "Contribution skyline"),
+    ("div-neural", "05", "Repo neural map"),
+    ("div-galaxy", "06", "Contribution galaxy"),
+    ("div-ops", "07", "Active ops: flight recorder"),
+    ("div-ctf", "08", "Intercepted transmission"),
+    ("div-arsenal", "09", "Arsenal"),
 ]
 
 

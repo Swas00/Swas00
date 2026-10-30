@@ -35,6 +35,7 @@ jobs:
           python galaxy.py  "${{ github.repository_owner }}" ../assets/galaxy.svg
           python neural.py  "${{ github.repository_owner }}" ../assets/neural.svg
           python ops.py     "${{ github.repository_owner }}" ../assets/ops.svg
+          python rpg_sheet.py "${{ github.repository_owner }}" ../assets/rpg_sheet.svg
           python explorer.py "${{ github.repository_owner }}" ../README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

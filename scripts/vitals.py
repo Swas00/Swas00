@@ -15,7 +15,7 @@ from xml.sax.saxutils import escape
 import common
 import theme as t
 
-USER = sys.argv[1] if len(sys.argv) > 1 else "Kaushik2210"
+USER = sys.argv[1] if len(sys.argv) > 1 else "Swas00"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "assets/vitals.svg"
 TZ_MIN, TZ_NAME = 330, "IST"
 W, H = 830, 350

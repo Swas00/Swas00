@@ -8,7 +8,7 @@ body:
         Compute your proof (bound to your GitHub login, lowercase):
 
         ```bash
-        echo -n "KAUSHIK{the_flag_you_found}:your-login" | sha256sum | cut -c1-12
+        echo -n "SWASTIK{the_flag_you_found}:your-login" | sha256sum | cut -c1-12
         ```
         Paste the 12 hex characters below. **Never paste the flag itself** — this issue is public.
   - type: input

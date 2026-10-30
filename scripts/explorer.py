@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 import common
 
-USER = sys.argv[1] if len(sys.argv) > 1 else "Kaushik2210"
+USER = sys.argv[1] if len(sys.argv) > 1 else "Swas00"
 README = sys.argv[2] if len(sys.argv) > 2 else "README.md"
 START, END = "<!--OPS_START-->", "<!--OPS_END-->"
 LIMIT = 8
