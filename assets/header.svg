@@ -92,7 +92,7 @@
 <rect x="8" y="8" width="32" height="32" fill="#070c1a" stroke="#45ddff" stroke-width="1.2"/>
 <text x="24" y="28" class="rpg-mono" font-size="14" text-anchor="middle">💠</text>
 <text x="48" y="20" class="rpg-badge-lbl">ACTIVE QUEST</text>
-<text x="48" y="36" class="rpg-badge-val" fill="#45ddff">scamalert (today)</text>
+<text x="48" y="36" class="rpg-badge-val" fill="#45ddff">Swas00 (today)</text>
 </g>
 <g transform="translate(535, 166)">
 <rect width="255" height="48" fill="#0b1226" stroke="#283457" stroke-width="1.5"/>

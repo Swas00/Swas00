@@ -165,8 +165,8 @@
 <line x1="558" y1="266" x2="786" y2="266" stroke="#283457"/>
 <text x="562" y="286" class="pix-title" font-size="13">📜 ACTIVE QUEST</text>
 <rect x="558" y="296" width="228" height="76" fill="#080c16" stroke="#253354" stroke-width="1.2"/>
-<text x="568" y="316" class="pix" font-size="11" fill="#ffd753">MAIN: "SCAMALERT"</text>
-<text x="568" y="332" class="pix-sub" font-size="10">OBJECTIVE: Forging the future of software</text>
+<text x="568" y="316" class="pix" font-size="11" fill="#ffd753">MAIN: "SWAS00"</text>
+<text x="568" y="332" class="pix-sub" font-size="10">OBJECTIVE: My Personal Repository</text>
 <text x="568" y="350" class="pix" font-size="10" fill="#45ddff">STATUS: In Battle · BOUNTY: +750 XP</text>
 <g transform="translate(558, 380)">
 <rect x="0" y="0" width="54" height="20" fill="#131b30" stroke="#ff5468" stroke-width="1"/>
