@@ -46,7 +46,7 @@
 <rect x="815" y="425" width="2" height="2" fill="#05070f"/>
 <rect x="28" y="6" width="310" height="24" fill="#10162a" stroke="#f3be34" stroke-width="2"/>
 <text x="40" y="22" class="pix-title">⚔ CHARACTER STATUS ⚔</text>
-<text x="794" y="24" class="pix-sub" text-anchor="end">REALM: GITHUB // TIME: 2026.10.30</text>
+<text x="794" y="24" class="pix-sub" text-anchor="end">REALM: GITHUB // TIME: 2026.10.31</text>
 <rect x="32" y="42" width="210" height="368" fill="#0b101f" stroke="#283457" stroke-width="2"/>
 <rect x="36" y="46" width="202" height="360" fill="none" stroke="#1d2847" stroke-width="1"/>
 <rect x="44" y="54" width="186" height="150" fill="#080c18" stroke="#1a2540" stroke-width="1.5"/>
@@ -85,7 +85,7 @@
 <line x1="437.5" y1="102" x2="437.5" y2="114" stroke="#070a14" stroke-width="1"/>
 <line x1="456.0" y1="102" x2="456.0" y2="114" stroke="#070a14" stroke-width="1"/>
 <line x1="474.5" y1="102" x2="474.5" y2="114" stroke="#070a14" stroke-width="1"/>
-<text x="493" y="126" class="pix-sub" text-anchor="end">15d Streak &#183; <tspan fill="#fbfdff">100/100</tspan></text>
+<text x="493" y="126" class="pix-sub" text-anchor="end">16d Streak &#183; <tspan fill="#fbfdff">100/100</tspan></text>
 <text x="270" y="142" class="pix" font-weight="bold" fill="#ffd753">MP</text>
 <rect x="308" y="132" width="185" height="12" fill="#161c30" stroke="#263559" stroke-width="1"/>
 <rect x="309" y="133" width="183.0" height="10" fill="url(#mpGrad)"><animate attributeName="width" values="0;183.0" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
@@ -101,7 +101,7 @@
 <text x="493" y="156" class="pix-sub" text-anchor="end">Code Velocity &#183; <tspan fill="#fbfdff">200/200</tspan></text>
 <text x="270" y="172" class="pix" font-weight="bold" fill="#ffd753">EXP</text>
 <rect x="308" y="162" width="185" height="12" fill="#161c30" stroke="#263559" stroke-width="1"/>
-<rect x="309" y="163" width="110.295" height="10" fill="url(#expGrad)"><animate attributeName="width" values="0;110.295" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
+<rect x="309" y="163" width="157.47" height="10" fill="url(#expGrad)"><animate attributeName="width" values="0;157.47" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/></rect>
 <line x1="326.5" y1="162" x2="326.5" y2="174" stroke="#070a14" stroke-width="1"/>
 <line x1="345.0" y1="162" x2="345.0" y2="174" stroke="#070a14" stroke-width="1"/>
 <line x1="363.5" y1="162" x2="363.5" y2="174" stroke="#070a14" stroke-width="1"/>
@@ -111,7 +111,7 @@
 <line x1="437.5" y1="162" x2="437.5" y2="174" stroke="#070a14" stroke-width="1"/>
 <line x1="456.0" y1="162" x2="456.0" y2="174" stroke="#070a14" stroke-width="1"/>
 <line x1="474.5" y1="162" x2="474.5" y2="174" stroke="#070a14" stroke-width="1"/>
-<text x="493" y="186" class="pix-sub" text-anchor="end">+393 to Lv.40 &#183; <tspan fill="#fbfdff">607/1000</tspan></text>
+<text x="493" y="186" class="pix-sub" text-anchor="end">+138 to Lv.40 &#183; <tspan fill="#fbfdff">862/1000</tspan></text>
 <line x1="266" y1="202" x2="522" y2="202" stroke="#283457"/>
 <text x="270" y="222" class="pix-title" font-size="12">CORE PARAMETERS</text>
 <text x="274" y="250" class="pix-stat" fill="#ff5468">STR</text>
@@ -127,7 +127,7 @@
 <text x="358" y="300" class="pix-sub">Shipping Velocity</text>
 <text x="478" y="300" class="pix" font-size="10" fill="#ffd753">■■■■■■■□</text>
 <text x="274" y="325" class="pix-stat" fill="#37f394">VIT</text>
-<text x="318" y="325" class="pix-val">95</text>
+<text x="318" y="325" class="pix-val">98</text>
 <text x="358" y="325" class="pix-sub">Consistency/Streak</text>
 <text x="478" y="325" class="pix" font-size="10" fill="#37f394">■■■■■■■□</text>
 <text x="274" y="350" class="pix-stat" fill="#c084fc">CHA</text>
@@ -165,8 +165,8 @@
 <line x1="558" y1="266" x2="786" y2="266" stroke="#283457"/>
 <text x="562" y="286" class="pix-title" font-size="13">📜 ACTIVE QUEST</text>
 <rect x="558" y="296" width="228" height="76" fill="#080c16" stroke="#253354" stroke-width="1.2"/>
-<text x="568" y="316" class="pix" font-size="11" fill="#ffd753">MAIN: "SWAS00"</text>
-<text x="568" y="332" class="pix-sub" font-size="10">OBJECTIVE: My Personal Repository</text>
+<text x="568" y="316" class="pix" font-size="11" fill="#ffd753">MAIN: "SCAMALERT"</text>
+<text x="568" y="332" class="pix-sub" font-size="10">OBJECTIVE: Forging the future of software</text>
 <text x="568" y="350" class="pix" font-size="10" fill="#45ddff">STATUS: In Battle · BOUNTY: +750 XP</text>
 <g transform="translate(558, 380)">
 <rect x="0" y="0" width="54" height="20" fill="#131b30" stroke="#ff5468" stroke-width="1"/>
