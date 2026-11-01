@@ -57,14 +57,14 @@
 <!--OPS_START-->
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
-| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | today | _Still cooking._ |
 | [**vapt-agent**](https://github.com/Swas00/vapt-agent) | `Python` | today | AI-powered unified VAPT agent -- DataOps Innovation Hackathon (PS-1) |
+| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | today | _Still cooking._ |
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 2d ago | _Still cooking._ |
 | [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 6d ago | _Still cooking._ |
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 9d ago | _Still cooking._ |
-| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 12d ago | Project Workspace Collaboration Platform |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 10d ago | _Still cooking._ |
+| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 13d ago | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 29d ago | Resume assistant project |
-| [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 29d ago | _Still cooking._ |
+| [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 30d ago | _Still cooking._ |
 <!--OPS_END-->
 
 <br/>
