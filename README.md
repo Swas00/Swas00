@@ -61,10 +61,10 @@
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | yesterday | _Still cooking._ |
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 3d ago | _Still cooking._ |
 | [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 7d ago | _Still cooking._ |
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 10d ago | _Still cooking._ |
-| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 13d ago | Project Workspace Collaboration Platform |
-| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 30d ago | Resume assistant project |
-| [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 30d ago | _Still cooking._ |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 11d ago | _Still cooking._ |
+| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 14d ago | Project Workspace Collaboration Platform |
+| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 31d ago | Resume assistant project |
+| [**DropoutGuard-AI**](https://github.com/Swas00/DropoutGuard-AI) | `TypeScript` | 31d ago | _Still cooking._ |
 <!--OPS_END-->
 
 <br/>
