@@ -58,9 +58,9 @@
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
 | [**vapt-agent**](https://github.com/Swas00/vapt-agent) | `Python` | yesterday | AI-powered unified VAPT agent -- DataOps Innovation Hackathon (PS-1) |
-| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | 4d ago | _Still cooking._ |
-| [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 6d ago | _Still cooking._ |
-| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 10d ago | _Still cooking._ |
+| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | 5d ago | _Still cooking._ |
+| [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 7d ago | _Still cooking._ |
+| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 11d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 14d ago | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 17d ago | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 34d ago | Resume assistant project |
