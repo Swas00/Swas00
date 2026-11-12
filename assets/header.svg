@@ -100,7 +100,7 @@
 <rect x="8" y="8" width="32" height="32" fill="#070c1a" stroke="#ffd753" stroke-width="1.2"/>
 <text x="24" y="28" class="rpg-mono" font-size="14" text-anchor="middle">🔥</text>
 <text x="48" y="20" class="rpg-badge-lbl">STREAK COMBO</text>
-<text x="48" y="36" class="rpg-badge-val" fill="#ffd753">2 DAYS (BUFFED)</text>
+<text x="48" y="36" class="rpg-badge-val" fill="#ffd753">0 DAYS (BUFFED)</text>
 </g>
 <rect x="16" y="16" width="798" height="308" fill="url(#crtScan)" pointer-events="none"/>
 </svg>
