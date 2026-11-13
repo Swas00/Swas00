@@ -10,7 +10,7 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
 .mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}
 .label{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;fill:#8b9dca}
 </style></defs>
-<rect width="830" height="350" rx="16" fill="#08112b"/><circle cx="28" cy="30" r="3.5" fill="#34d399"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle><text x="40" y="34" class="label" style="fill:#b4c4e8">LIVE VITALS</text><text x="802" y="34" class="label" text-anchor="end">2026-11-12 UTC</text><line x1="28" y1="48" x2="802" y2="48" stroke="#243566"/>
+<rect width="830" height="350" rx="16" fill="#08112b"/><circle cx="28" cy="30" r="3.5" fill="#34d399"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle><text x="40" y="34" class="label" style="fill:#b4c4e8">LIVE VITALS</text><text x="802" y="34" class="label" text-anchor="end">2026-11-13 UTC</text><line x1="28" y1="48" x2="802" y2="48" stroke="#243566"/>
 <line x1="290" y1="64" x2="290" y2="326" stroke="#243566"/>
 <line x1="560" y1="64" x2="560" y2="326" stroke="#243566"/>
 <text x="28" y="74" class="label">ACTIVITY RINGS</text>
