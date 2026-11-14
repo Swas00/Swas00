@@ -64,7 +64,7 @@
 | [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 19d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 23d ago | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 26d ago | Project Workspace Collaboration Platform |
-| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 42d ago | Resume assistant project |
+| [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 43d ago | Resume assistant project |
 <!--OPS_END-->
 
 <br/>
