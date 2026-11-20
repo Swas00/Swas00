@@ -57,11 +57,11 @@
 <!--OPS_START-->
 | Repo | Stack | Last push | Brief |
 |:--|:--|:--|:--|
-| [**verifyai**](https://github.com/Swas00/verifyai) | `JavaScript` | 3d ago | AI-powered document screening system for identity/travel document forgery detection (SIH PS… |
+| [**verifyai**](https://github.com/Swas00/verifyai) | `JavaScript` | 4d ago | AI-powered document screening system for identity/travel document forgery detection (SIH PS… |
 | [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | 9d ago | _Still cooking._ |
 | [**vapt-agent**](https://github.com/Swas00/vapt-agent) | `Python` | 15d ago | AI-powered unified VAPT agent -- DataOps Innovation Hackathon (PS-1) |
-| [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 20d ago | _Still cooking._ |
-| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 24d ago | _Still cooking._ |
+| [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 21d ago | _Still cooking._ |
+| [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 25d ago | _Still cooking._ |
 | [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 28d ago | _Still cooking._ |
 | [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 31d ago | Project Workspace Collaboration Platform |
 | [**resume-assistant**](https://github.com/Swas00/resume-assistant) | `TypeScript` | 48d ago | Resume assistant project |
