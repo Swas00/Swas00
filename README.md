@@ -59,12 +59,12 @@
 |:--|:--|:--|:--|
 | [**order-to-audit**](https://github.com/Swas00/order-to-audit) | `Python` | yesterday | Order-to-Audit system for a small food manufacturer (internship prototype) |
 | [**verifyai**](https://github.com/Swas00/verifyai) | `JavaScript` | 9d ago | AI-powered document screening system for identity/travel document forgery detection (SIH PS… |
-| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | 14d ago | _Still cooking._ |
-| [**vapt-agent**](https://github.com/Swas00/vapt-agent) | `Python` | 20d ago | AI-powered unified VAPT agent -- DataOps Innovation Hackathon (PS-1) |
+| [**scamalert**](https://github.com/Swas00/scamalert) · [live](https://scamalert-tau.vercel.app) | `Python` | 15d ago | _Still cooking._ |
+| [**vapt-agent**](https://github.com/Swas00/vapt-agent) | `Python` | 21d ago | AI-powered unified VAPT agent -- DataOps Innovation Hackathon (PS-1) |
 | [**verity**](https://github.com/Swas00/verity) · [live](https://verity-two-delta.vercel.app) | `JavaScript` | 26d ago | _Still cooking._ |
 | [**sovereign-proof**](https://github.com/Swas00/sovereign-proof) | `TypeScript` | 30d ago | _Still cooking._ |
-| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 33d ago | _Still cooking._ |
-| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 36d ago | Project Workspace Collaboration Platform |
+| [**portfolio**](https://github.com/Swas00/portfolio) · [live](https://portfolio-mu-weld-68.vercel.app) | `TypeScript` | 34d ago | _Still cooking._ |
+| [**letscollab**](https://github.com/Swas00/letscollab) · [live](https://letscollab-delta.vercel.app) | `TypeScript` | 37d ago | Project Workspace Collaboration Platform |
 <!--OPS_END-->
 
 <br/>
