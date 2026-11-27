@@ -1,75 +1,43 @@
-# 🚀 Complete Deployment Guide for Swastik's Enhanced Profile (@Swas00)
+# Stratosphere: cloud-computing profile for @Swas00
 
-Your profile is now powered by the full **Kaushik-inspired Data Visualization & Showcase Architecture**, customized for your data and projects.
+Everything on the profile is generated from live GitHub data by small Python scripts (standard library plus Pillow for the avatar), rebuilt every six hours by GitHub Actions. All visuals are pure SVG (SMIL), so they animate inside `<img>` on github.com.
 
----
+## What's in it
 
-### 🌟 What this brings to your GitHub Profile:
+| Section | Asset | Script | What it shows |
+|:--|:--|:--|:--|
+| Hero | `header.svg` | `banners.py` | Cloud-layer parallax sky, live service-mesh cluster, typed prompt, status chips, traffic wave over server racks |
+| 01 Architecture | `architecture.svg` | `architecture.py` | Clients, edge, load balancer, autoscaling containers (your latest repos), data tier, CI/CD strip |
+| 02 Cluster status | `cluster.svg` | `cluster.py` | Avatar node, repos, stars, followers, streak, language mix, 30-day pulse |
+| 03 Observability | `observe.svg` | `observe.py` | Requests/day series, traffic by hour, 52-week heatmap |
+| 04 Data center | `datacenter.svg` | `datacenter.py` | One isometric rack per week, one LED per day |
+| 05 Service mesh | `neural.svg` | `neural.py` | Repos as microservices in language namespaces (keeps its filename: the CTF points at it) |
+| 06 Deployments | `deploy.svg` + table | `deploy.py`, `explorer.py` | 30-day push timeline and the service catalog table |
+| 07 Global edge | `edge.svg` | `edge.py` | Globe, 365-day ring, visitor nodes |
+| 08 CTF | Hall of Fame | `ctf_verify.py` | Unchanged three-stage CTF |
+| 09 Toolchain | `stack.svg` | `stack.py` | Layered stack; edit `LAYERS` in the script |
 
-1. **Aurora Header Banner (`assets/header.svg`)**:
-   - Drifting live aurora background mesh
-   - Real-time weekly contribution totals wave
-   - Rotating roles: *"Full-stack software developer"*, *"Exploring GenAI, LLMs & LangChain"*, *"MCA student & passionate builder"*
-   - Live glass status chips showing: `STATUS: Online`, `LAST PUSH: <repo>`, `STREAK: <n> days`
-2. **Retro 16-Bit RPG Character Sheet (`assets/rpg_sheet.svg`)**:
-   - Procedural 16-bit JRPG status screen: animated idle breathing pixel hero, HP (Streak Vitality), MP (Commit Velocity), EXP to next level, Core Attributes (STR, INT, AGI, VIT, CHA, LUK), equipped stack weapons, and live active questline
-3. **Operator Dossier (`assets/dossier.svg`)**:
-   - Halftone portrait rendered directly from your GitHub profile picture (`Swas00.png`)
-   - Real-time statistics: Public Repos, Stars, Followers, Streak, Commit Count, and Language Mix
-4. **Live Vitals (`assets/vitals.svg`)**:
-   - 3 live gauges: Streak & consistency rings, 24-hour push clock (shows what time of day you ship code), and 26-week momentum comparison
-5. **Contribution Skyline (`assets/skyline.svg`)**:
-   - 3D procedural isometric city: 1 building per day, height = commits, lit windows for active days, beacon marking your peak commit day
-6. **Repo Neural Map (`assets/neural.svg`)**:
-   - Every one of your repositories is a neuron clustered by language and wired to repos with shared topics/dependencies, with pulse rings on active repos
-7. **Contribution Galaxy (`assets/galaxy.svg`)**:
-   - 365 days of contributions mapped as an astronomical spiral galaxy (core is today)
-   - Interactive visitor star guestbook (visitors can submit an issue to add their orbiting star!)
-8. **Active Ops Flight Recorder (`assets/ops.svg` & Table)**:
-   - 2-week push histogram per repository
-   - Markdown mission-brief table auto-updated by `explorer.py` with your latest public repos (`portfolio`, `letscollab`, `Spend_Wise`, `LIFE-RPG`, etc.)
-9. **Interactive Transmission CTF (`assets/div-ctf.svg`)**:
-   - 3-stage CTF challenge hidden in your profile with automated proof verification and Hall of Fame
-10. **Arsenal**:
-    - Curated skill icons (`skillicons.dev`) and custom badges matching your royal/dark palette
-11. **Full Automation (`.github/workflows/showcase.yml`)**:
-    - Runs every 6 hours and on **every push to `main`**
-    - Uses `GITHUB_TOKEN` to recalculate all stats, re-render all SVGs directly into `assets/`, update the `README.md` table, and commit automatically!
+Design tokens (colours, type, helpers) live in `scripts/theme.py`.
 
----
-
-### 🚀 How to Push to GitHub in 1 Step
-
-All 16 SVGs are compiled and ready in this repository. Push them to your GitHub profile repository (`Swas00/Swas00`):
+## Rebuild locally with live data
 
 ```bash
-cd /Users/swastiksahu/Downloads/Swas00-main
-git init
-git branch -M main
-git remote add origin https://github.com/Swas00/Swas00.git
-git add .
-git commit -m "feat: complete showcase profile with 16-bit RPG character sheet"
-git push -u origin main --force
+GITHUB_TOKEN=$(gh auth token) ./scripts/build_all.sh
 ```
 
----
+No token handy? `PREVIEW_DATA=1 ./scripts/build_all.sh` renders with placeholder contribution numbers so you can check layouts. `scripts/preview.py` writes `preview.html`, a single page showing every asset.
 
-### ⚙️ Ensure GitHub Actions Permissions (One-Time Setup)
+## Deploy
 
-To allow GitHub Actions to run the automatic 6-hour and on-push re-renders:
+```bash
+git add -A
+git commit -m "feat: stratosphere cloud profile"
+git push
+```
 
-1. Open your repository: 👉 **[https://github.com/Swas00/Swas00](https://github.com/Swas00/Swas00)**
-2. Click **Settings** (top tab) ➔ **Actions** (left sidebar) ➔ **General**.
-3. Under **Workflow permissions**, select **"Read and write permissions"**.
-4. Check the box **"Allow GitHub Actions to create and approve pull requests"**.
-5. Click **Save**.
+In the repo settings, enable **Actions → General → Workflow permissions → Read and write**. Then run the "Update showcase" workflow once (Actions tab → Run workflow) so every chart picks up your real contribution data.
 
----
+## Secrets and issue forms
 
-### 🔄 How to Force an On-Demand Update Anytime
-
-Whenever you push code to any repo and want your profile to refresh immediately:
-1. Go to **[https://github.com/Swas00/Swas00/actions](https://github.com/Swas00/Swas00/actions)**.
-2. Click **Update showcase (dossier, galaxy, radar)**.
-3. Click **Run workflow** ➔ **Run workflow**.
-4. In ~45 seconds, all SVGs and your repository table will update to the latest state.
+* `CTF_FLAG` repo secret arms the CTF (unchanged).
+* The "Add my node" issue form (`star.yml`) feeds `stars/visitors.json`; `stars.yml` redraws `edge.svg` on each new node.

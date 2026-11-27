@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add a visitor star to the Contribution Galaxy from a "[STAR]" issue.
+"""Add a visitor node to the Global Edge network from a "[STAR]" issue.
 
 Runs from .github/workflows/stars.yml on `issues: opened`. The issue body is
 UNTRUSTED text from a stranger that ends up on a public profile, so:
@@ -53,7 +53,7 @@ def main():
 
     m = BODY_RE.search(issue.get("body") or "")
     if not m:
-        gh("issue", "comment", num, "--body", "Couldn't read that form. Please use the **Add my star** template.")
+        gh("issue", "comment", num, "--body", "Couldn't read that form. Please use the **Add my node** template.")
         gh("issue", "close", num, "--reason", "not planned")
         return
     msg = clean(m.group(1)) or "hello from the void"
@@ -70,7 +70,7 @@ def main():
     db = db[-MAX_STARS:]
     json.dump(db, open(DB, "w", encoding="utf-8"), indent=2)
     gh("issue", "comment", num, "--body",
-       f"⭐ **Your star is in the galaxy, @{login}.** It appears on the profile within a minute and keeps orbiting. "
+       f"🛰️ **Your node is online, @{login}.** It appears on the profile within a minute and keeps orbiting. "
        f"Open another issue any time to change your message.")
     gh("issue", "close", num, "--reason", "completed")
     print("star added:", login, color, repr(msg))

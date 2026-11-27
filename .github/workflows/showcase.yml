@@ -1,4 +1,4 @@
-name: Update showcase (dossier, galaxy, radar)
+name: Update showcase (cloud profile)
 
 on:
   schedule:
@@ -25,17 +25,18 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --quiet pillow
-      - name: Render header, vitals, dossier, neural map, ops, skyline and galaxy
+      - name: Render header, architecture, cluster, observability, data center, mesh, deploy log, edge and stack
         working-directory: scripts
         run: |
           python banners.py "${{ github.repository_owner }}" ../assets
-          python vitals.py  "${{ github.repository_owner }}" ../assets/vitals.svg
-          python dossier.py "${{ github.repository_owner }}" ../assets/dossier.svg
-          python skyline.py "${{ github.repository_owner }}" ../assets/skyline.svg
-          python galaxy.py  "${{ github.repository_owner }}" ../assets/galaxy.svg
-          python neural.py  "${{ github.repository_owner }}" ../assets/neural.svg
-          python ops.py     "${{ github.repository_owner }}" ../assets/ops.svg
-          python rpg_sheet.py "${{ github.repository_owner }}" ../assets/rpg_sheet.svg
+          python architecture.py "${{ github.repository_owner }}" ../assets/architecture.svg
+          python cluster.py "${{ github.repository_owner }}" ../assets/cluster.svg
+          python observe.py "${{ github.repository_owner }}" ../assets/observe.svg
+          python datacenter.py "${{ github.repository_owner }}" ../assets/datacenter.svg
+          python neural.py "${{ github.repository_owner }}" ../assets/neural.svg
+          python deploy.py "${{ github.repository_owner }}" ../assets/deploy.svg
+          python edge.py "${{ github.repository_owner }}" ../assets/edge.svg
+          python stack.py ../assets/stack.svg
           python explorer.py "${{ github.repository_owner }}" ../README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

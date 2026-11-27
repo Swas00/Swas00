@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Rewrite the OPS block of README.md: a plain mission-brief table for recent repos.
+"""Rewrite the OPS block of README.md: a plain service-catalog table for recent repos.
 
-This is the text equivalent of the flight-recorder chart (HIG: charts need an
+This is the text equivalent of the deployment-log chart (HIG: charts need an
 accessible alternative), rebuilt on every showcase run from the live repo list.
 Usage: explorer.py [user] [README.md]
 """
@@ -41,7 +41,7 @@ def main():
     now = datetime.now(timezone.utc)
     rp = [r for r in common.repos(USER) if r["name"].lower() != USER.lower()]
     rp.sort(key=lambda r: r["pushed_at"], reverse=True)
-    rows = ["| Repo | Stack | Last push | Brief |", "|:--|:--|:--|:--|"]
+    rows = ["| Service | Runtime | Last deploy | Brief |", "|:--|:--|:--|:--|"]
     for r in rp[:LIMIT]:
         days = max(0, (now - datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days)
         name = f"[**{r['name']}**]({r['html_url']})"
