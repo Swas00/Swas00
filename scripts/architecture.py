@@ -144,9 +144,9 @@ def main():
                      f'<text x="{X_POD + W_POD - 10}" y="{y + 24}" class="mono" font-size="8.5" text-anchor="end" fill="{t.TEXT3}">scaling out</text>')
         o.append("</g>")
     # autoscaler readout
-    o.append(f'<g class="mono"><text x="{BUS + 22}" y="{Y0 - 6}" font-size="9.5" fill="{t.TEAL}" letter-spacing=".08em">REPLICAS</text>'
-             f'<text x="{BUS + 88}" y="{Y0 - 6}" font-size="12" font-weight="700" fill="{t.TEXT}" opacity="1">4<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="{ghost_kt}" dur="{CYCLE}s" repeatCount="indefinite"/></text>'
-             f'<text x="{BUS + 88}" y="{Y0 - 6}" font-size="12" font-weight="700" fill="{t.TEAL}" opacity="0">6<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{ghost_kt}" dur="{CYCLE}s" repeatCount="indefinite"/></text></g>')
+    o.append(f'<g class="mono"><text x="{BUS + 22}" y="388" font-size="9.5" fill="{t.TEAL}" letter-spacing=".08em">REPLICAS</text>'
+             f'<text x="{BUS + 88}" y="389" font-size="12" font-weight="700" fill="{t.TEXT}" opacity="1">4<animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="{ghost_kt}" dur="{CYCLE}s" repeatCount="indefinite"/></text>'
+             f'<text x="{BUS + 88}" y="389" font-size="12" font-weight="700" fill="{t.TEAL}" opacity="0">6<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{ghost_kt}" dur="{CYCLE}s" repeatCount="indefinite"/></text></g>')
 
     # data tier
     dx, dy = DATA[0]  # database cylinder
