@@ -27,16 +27,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
-      - name: Redraw the galaxy
+      - name: Redraw the edge network
         working-directory: scripts
-        run: python galaxy.py "${{ github.repository_owner }}" ../assets/galaxy.svg
+        run: python edge.py "${{ github.repository_owner }}" ../assets/edge.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit
         run: |
           git config user.name "star-bot"
           git config user.email "star-bot@users.noreply.github.com"
-          git add stars/visitors.json assets/galaxy.svg
+          git add stars/visitors.json assets/edge.svg
           git diff --cached --quiet && exit 0
           git commit -m "chore(stars): new visitor star"
           git pull --rebase -q

@@ -20,7 +20,35 @@ def _req(url, data=None):
         return f.read()
 
 
+def _preview_graph(login):
+    """Offline stand-in for local design previews only (PREVIEW_DATA=1, no token).
+    Deterministic fake contribution calendar so layouts can be checked without credentials.
+    The scheduled workflow always has a token and never takes this path."""
+    import random
+    from datetime import date, timedelta
+    rnd = random.Random(login)
+    end = date.today()
+    start = end - timedelta(days=363)
+    start -= timedelta(days=(start.weekday() + 1) % 7)  # back to Sunday
+    days_, d = [], start
+    while d <= end:
+        base = 0.55 if d.weekday() < 5 else 0.3
+        burst = 2.4 if (d.toordinal() // 17) % 4 == 0 else 1.0
+        c = 0 if rnd.random() > base * burst else int(rnd.expovariate(1 / 3.2) * burst) + 1
+        days_.append((d.isoformat(), c if d <= end else 0))
+        d += timedelta(days=1)
+    weeks = [{"contributionDays": [{"date": a, "contributionCount": b} for a, b in days_[i:i + 7]]}
+             for i in range(0, len(days_), 7)]
+    tot = sum(b for _, b in days_)
+    return {"createdAt": "2023-01-01T00:00:00Z", "followers": {"totalCount": 0}, "following": {"totalCount": 0},
+            "contributionsCollection": {"totalCommitContributions": tot, "totalPullRequestContributions": 0,
+                                        "totalIssueContributions": 0, "restrictedContributionsCount": 0,
+                                        "contributionCalendar": {"totalContributions": tot, "weeks": weeks}}}
+
+
 def user_graph(login):
+    if not os.environ.get("GITHUB_TOKEN") and os.environ.get("PREVIEW_DATA") == "1":
+        return _preview_graph(login)
     body = json.dumps({"query": QUERY, "variables": {"login": login}}).encode()
     out = json.loads(_req("https://api.github.com/graphql", body))
     if "errors" in out:

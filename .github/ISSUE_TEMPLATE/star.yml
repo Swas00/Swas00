@@ -1,12 +1,12 @@
-name: "⭐ Add my star to the galaxy"
-description: "Put a named star in the Contribution Galaxy on my profile. It stays and keeps orbiting."
-title: "[STAR] add my star"
+name: "🛰️ Add my node to the edge network"
+description: "Join the Global Edge on my profile as a satellite node. It stays and keeps orbiting."
+title: "[STAR] add my node"
 body:
   - type: markdown
     attributes:
       value: |
-        Your GitHub handle becomes a glowing star in my profile's **Contribution Galaxy**, with a short message beside it.
-        One star per person (submit again to change it). Letters, numbers and `! ? ' , -` only; 32 characters max. Abusive messages are filtered out.
+        Your GitHub handle becomes a glowing node orbiting the globe in my profile's **Global Edge** network, listed in the node registry with a short message.
+        One node per person (submit again to change it). Letters, numbers and `! ? ' , -` only; 32 characters max. Abusive messages are filtered out.
   - type: input
     id: message
     attributes:
