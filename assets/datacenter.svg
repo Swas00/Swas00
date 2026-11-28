@@ -776,6 +776,7 @@ text{font-family:system-ui,-apple-system,'SF Pro Text','Segoe UI',Roboto,'Helvet
 <polygon points="484.9,472.6 503.1,481.8 503.1,486.4 484.9,477.2" fill="#10243d"/>
 <polygon points="484.9,479.0 503.1,488.2 503.1,492.8 484.9,483.6" fill="#10243d"/>
 <polygon points="484.9,485.4 503.1,494.6 503.1,499.2 484.9,490.0" fill="#106679"><animate attributeName="fill-opacity" values="1;0.55;1" dur="2.1s" begin="-1.2s" repeatCount="indefinite"/></polygon>
+<polygon points="484.9,491.8 503.1,501.0 503.1,505.6 484.9,496.4" fill="#10243d"/>
 <line x1="510.8" y1="471.6" x2="523.2" y2="465.4" stroke="#16365a" stroke-width=".9"/>
 <line x1="510.8" y1="482.6" x2="523.2" y2="476.4" stroke="#16365a" stroke-width=".9"/>
 <line x1="510.8" y1="493.6" x2="523.2" y2="487.4" stroke="#16365a" stroke-width=".9"/>
